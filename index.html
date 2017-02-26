@@ -1,10 +1,84 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"/>
+    <style>
+	    html{height: 100vh}
+	body {
+			font-family: 'Helvetica Neue', Helvetica, sans-serif;
+			font-weight: 100;
+			background: #000;
+			min-height: 100vh;
+			color: #fff;
+			text-align: center;
+			padding: 40px;
+			overflow-x: hidden; /* For Opera */
+			-webkit-box-shadow:
+				inset #19d4ff 0 0 0 5px,
+				inset #18cdf7 0 0 0 1px,
+				inset #53dfff 0 0 0 10px,
+				inset #50d8f7 0 0 0 11px,
+				inset #8ce9ff 0 0 0 16px,
+				inset #88e2f7 0 0 0 17px,
+				inset #c5f4ff 0 0 0 22px,
+				inset #bfecf7 0 0 0 23px;
+			-moz-box-shadow:
+				inset #19d4ff 0 0 0 5px,
+				inset #18cdf7 0 0 0 1px,
+				inset #53dfff 0 0 0 10px,
+				inset #50d8f7 0 0 0 11px,
+				inset #8ce9ff 0 0 0 16px,
+				inset #88e2f7 0 0 0 17px,
+				inset #c5f4ff 0 0 0 22px,
+				inset #bfecf7 0 0 0 23px;
+			box-shadow:
+				inset #19d4ff 0 0 0 5px,
+				inset #18cdf7 0 0 0 1px,
+				inset #53dfff 0 0 0 10px,
+				inset #50d8f7 0 0 0 11px,
+				inset #8ce9ff 0 0 0 16px,
+				inset #88e2f7 0 0 0 17px,
+				inset #c5f4ff 0 0 0 22px,
+				inset #bfecf7 0 0 0 23px;
+		}
+	
+      	.subcontainer {
+			width: 600px;
+			height: 400px;
+			margin-left:auto;
+			margin-right:auto
+		}
+    </style>
     <title>Kaymas</title>
   </head>
 
   <body>
-    <h1>in process</h1>
-  </body>
+	   <h1>In Process</h1>
+	   <div class="subcontainer" id="siri-container">
+	   </div>
+	  </body>
+    <script src="siriwavejs.js"></script>
+    <script>
+    var siriWave = new SiriWave({
+        container: document.getElementById('siri-container'),
+        autostart: true,
+        amplitude: 1,
+	color: '#00f',
+	speed: 0.1,
+	cover: true,
+        
+        
+        
+    });/*
+	    var siriWave2 = new SiriWave({
+        container: document.getElementById('siri-container'),
+        amplitude: 0.6,
+	speed: 0.2,
+	autostart: true,
+        style: 'ios9'
+		
+    });
+	*/
+    </script>
+  
 </html>
