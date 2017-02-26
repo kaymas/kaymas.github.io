@@ -82,8 +82,10 @@ function Spot(i,j){
 }
 
 function setup(){
-  createCanvas(600,600);
+  var canvas = createCanvas(500,500);
   console.log('A*');
+  canvas.parent('sketch-holder');
+
 
   w = width / cols;
   h = height / rows;
@@ -184,16 +186,16 @@ function draw() {
 
     for(var i = 0; i < cols; i++){
       for(var j = 0; j < cols; j++){
-        grid[i][j].show(color(255));
+        grid[i][j].show(color(245));
       }
     }
     //ClosedSet elements are red
     for(var i = 0; i < closedSet.length; i ++){
-        closedSet[i].show(color(255,0,0));
+        closedSet[i].show(color(244,67,54));
     }
     //openSet elements are green
     for(var i = 0; i < openSet.length; i ++){
-        openSet[i].show(color(0, 255, 0));
+        openSet[i].show(color(0, 230, 118));
     }
 
     //find the path
@@ -208,10 +210,11 @@ function draw() {
 
     //path set elements are blue
     for(var i = 0; i < path.length; i++){
-      path[i].show(color(0,0,255));
+      path[i].show(color(2,119,189));
     }
     noFill();
     stroke(255);
+    strokeWeight(3);
     beginShape();
     for(var i = 0; i < path.length; i++){
       vertex(path[i].i * w + w / 2, path[i].j * h + h / 2);
