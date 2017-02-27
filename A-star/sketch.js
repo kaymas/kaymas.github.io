@@ -186,7 +186,7 @@ function draw() {
 
     for(var i = 0; i < cols; i++){
       for(var j = 0; j < cols; j++){
-        grid[i][j].show(color(245));
+        grid[i][j].show(color(255));
       }
     }
     //ClosedSet elements are red
