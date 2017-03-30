@@ -50,7 +50,7 @@
     				inset #A5D6A7 0 0 0 22px,
     				inset #C8E6C9 0 0 0 23px;
       }
-      
+
     	.subcontainer {
         width: 600px;
   			height: 400px;
@@ -66,6 +66,32 @@
         left: 0;
         z-index: -9999;
       }
+
+      h1{
+        align-items: center;
+        text-align: center;
+        font-size: 42px;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 300px;
+        margin: 0 auto 50px;
+      }
+
+      h2{
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 700px;
+        margin: 0 auto;
+      }
     </style>
     <script language="javascript" type="text/javascript" src="A-star/p5.js" ></script>
     <script language="javascript" type="text/javascript" src="matrix/sketch.js"></script>
@@ -75,10 +101,14 @@
   <body>
     <header style="margin-bottom:50px">
       <h1>In Process</h1>
-      <h2 style="margin-top:20px"><center>Meanwhile Check out the A-star implementation </center></h2>
+      <h2 style="margin-top:20px"><center>Meanwhile Check out the A-star implementation<br><br> </center>
       <button onclick="location.href='A-star/a-star.html'" type="button"
       style="height:30px;width:100px;font-size:18px;">
-      A-star</button>
+      A-star</button></h2>
+      <h2 style="margin-top:20px"><center>Meanwhile Check out the collatz implementation<br><br> </center>
+      <button onclick="location.href='collatz/collatz_conj.html'" type="button"
+      style="height:30px;width:100px;font-size:18px;">
+      Collatz</button></h2>
     </header>
 	   <div class="subcontainer" id="siri-container">
 	   </div>
@@ -86,23 +116,23 @@
   </body>
     <script src="siriwavejs.js"></script>
     <script>
-    var siriWave = new SiriWave({
-        container: document.getElementById('siri-container'),
-        autostart: true,
-        amplitude: 1,
-	color: '#fff',
-	speed: 0.1,
-	cover: true,
-  });/*
-	    var siriWave2 = new SiriWave({
-        container: document.getElementById('siri-container'),
-        amplitude: 0.6,
-	speed: 0.2,
-	autostart: true,
-        style: 'ios9'
+  //   var siriWave = new SiriWave({
+  //       container: document.getElementById('siri-container'),
+  //       autostart: true,
+  //       amplitude: 1,
+	// color: '#fff',
+	// speed: 0.1,
+	// cover: true,
+  // });
+	//     var siriWave2 = new SiriWave({
+  //       container: document.getElementById('siri-container'),
+  //       amplitude: 0.6,
+	// speed: 0.2,
+	// autostart: true,
+  //       style: 'ios9'
+  //
+  //   });
 
-    });
-	*/
     </script>
     <div id="sketch-holder" class="matrix"></div>
 </html>
