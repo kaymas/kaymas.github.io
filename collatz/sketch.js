@@ -58,7 +58,7 @@ function setup(){
   var j = 0;
   for(var i = 0; i < nBranch; i++){
     j = 0;
-      num = floor(random(2,10000));
+      num = floor(random(2,100000));
     //num += 1;
     //temp = num;
     collatzSeq[i].addVal(j, num);
@@ -74,10 +74,10 @@ function setup(){
     //num = temp;
   }
 
-  for(var i = 0; i < nBranch; i++){
-    collatzSeq[i].outputVals();
-
-  }
+  // for(var i = 0; i < nBranch; i++){
+  //   collatzSeq[i].outputVals();
+  //
+  // }
 }
 
 function draw(){
@@ -94,9 +94,9 @@ function draw(){
     stroke(33,150,243);
     strokeW = 4;
     alphaW = 1000;
-    len = 40;
+    len = 50;
     push();
-    translate(w/3,h/2);
+    translate(w/4,h - h/3 - h / 8);
     collatzSeq[i].createBranch();
     pop();
   }
