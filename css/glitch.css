@@ -1,0 +1,102 @@
+html,
+body {
+  background: black;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'VT323', monospace;
+}
+
+.centered {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 64px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 900px;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0px;
+    max-width: 700px
+    margin: 0 auto;
+}
+
+header{
+  margin-top: 50px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 175px;
+    width: 100%;
+}
+
+.typed{
+  color: #ffffff;
+  font-size: 24px;
+  color: transparent;
+}
+
+canvas,
+img {
+  -webkit-filter: blur(1px) contrast(1.8);
+          filter: blur(1px) contrast(1.8);
+}
+
+
+#glare,
+#glare2,
+#antiglare {
+  position: absolute;
+  -webkit-filter: blur(120px);
+          filter: blur(120px);
+  z-index: 10;
+}
+
+#glare {
+  top: -10%;
+  bottom: 40%;
+  left: 40%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+#glare2 {
+  top: 60%;
+  bottom: 10%;
+  left: 10%;
+  right: 60%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#antiglare {
+  top: 30%;
+  bottom: 0%;
+  left: 40%;
+  right: 40%;
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
