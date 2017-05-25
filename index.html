@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <style>
-  	    html{
-          /*height: 100vh*/
-          margin: 0px;
-          height: 100%;
-          width: 100%;
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        html {
+            /*height: 100vh*/
+            margin: 0px;
+            height: 100%;
+            width: 100%;
         }
-  	    body {
-    			font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    			font-weight: 100;
-    			background: #000;
-          font-size: 18px;
-          font-weight: bold;
-    			/*min-height: 100vh;*/
-          margin: 0px;
-          min-height: 100%;
-    			color: #fff;
-    			text-align: center;
-    			padding: 40px;
-    			overflow-x: hidden; /* For Opera */
-    			-webkit-box-shadow:
-    				inset #2E7D32 0 0 0 5px,
-    				inset #388E3C 0 0 0 1px,
-    				inset #43A047 0 0 0 10px,
-    				inset #4CAF50 0 0 0 11px,
-    				inset #66BB6A 0 0 0 16px,
-    				inset #81C784 0 0 0 17px,
-    				inset #A5D6A7 0 0 0 22px,
-    				inset #C8E6C9 0 0 0 23px;
-    			-moz-box-shadow:
-    				inset #2E7D32 0 0 0 5px,
-    				inset #388E3C 0 0 0 1px,
-    				inset #43A047 0 0 0 10px,
-    				inset #4CAF50 0 0 0 11px,
-    				inset #66BB6A 0 0 0 16px,
-    				inset #81C784 0 0 0 17px,
-    				inset #A5D6A7 0 0 0 22px,
-    				inset #C8E6C9 0 0 0 23px;
-    			box-shadow:
-    				inset #2E7D32 0 0 0 5px,
-    				inset #388E3C 0 0 0 1px,
-    				inset #43A047 0 0 0 10px,
-    				inset #4CAF50 0 0 0 11px,
-    				inset #66BB6A 0 0 0 16px,
-    				inset #81C784 0 0 0 17px,
-    				inset #A5D6A7 0 0 0 22px,
-    				inset #C8E6C9 0 0 0 23px;
-      }
 
-    	.subcontainer {
-        width: 600px;
-  			height: 400px;
-    		margin-left:auto;
-  			margin-right:auto
-  		}
-      .matrix{
-        width: 100vw;
-        height: 100vh;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -9999;
-      }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
+            font-weight: 100;
+            background: #000;
+            font-size: 18px;
+            font-weight: bold;
+            /*min-height: 100vh;*/
+            margin: 0px;
+            min-height: 100%;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            overflow-x: hidden;
+            /* For Opera */
+            -webkit-box-shadow: inset #2E7D32 0 0 0 5px,
+            inset #388E3C 0 0 0 1px,
+            inset #43A047 0 0 0 10px,
+            inset #4CAF50 0 0 0 11px,
+            inset #66BB6A 0 0 0 16px,
+            inset #81C784 0 0 0 17px,
+            inset #A5D6A7 0 0 0 22px,
+            inset #C8E6C9 0 0 0 23px;
+            -moz-box-shadow: inset #2E7D32 0 0 0 5px,
+            inset #388E3C 0 0 0 1px,
+            inset #43A047 0 0 0 10px,
+            inset #4CAF50 0 0 0 11px,
+            inset #66BB6A 0 0 0 16px,
+            inset #81C784 0 0 0 17px,
+            inset #A5D6A7 0 0 0 22px,
+            inset #C8E6C9 0 0 0 23px;
+            box-shadow: inset #2E7D32 0 0 0 5px,
+            inset #388E3C 0 0 0 1px,
+            inset #43A047 0 0 0 10px,
+            inset #4CAF50 0 0 0 11px,
+            inset #66BB6A 0 0 0 16px,
+            inset #81C784 0 0 0 17px,
+            inset #A5D6A7 0 0 0 22px,
+            inset #C8E6C9 0 0 0 23px;
+        }
 
-      h1{
-        align-items: center;
-        text-align: center;
-        font-size: 42px;
-        color: #ffffff;
-        background-color: #000000;
-        padding: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 300px;
-        margin: 0 auto 50px;
-      }
+        .subcontainer {
+            width: 600px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto
+        }
 
-      h2{
-        align-items: center;
-        text-align: center;
-        font-size: 25px;
-        color: #ffffff;
-        background-color: #000000;
-        padding: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 700px;
-        margin: 0 auto;
-      }
+        .matrix {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -9999;
+        }
+
+        h1 {
+            align-items: center;
+            text-align: center;
+            font-size: 42px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 300px;
+            margin: 0 auto 50px;
+        }
+
+        h2 {
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
     </style>
-    <script language="javascript" type="text/javascript" src="A-star/p5.js" ></script>
-    <script language="javascript" type="text/javascript" src="matrix/sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="js/matrix.js"></script>
     <title>Kaymas</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header style="margin-bottom:50px">
-      <h1>In Process</h1>
-      <h2 style="margin-top:20px"><center>Meanwhile Check out the A-star implementation<br><br> </center>
-      <button onclick="location.href='A-star/a-star.html'" type="button"
+        <h1>In Process</h1>
+        <h2 style="margin-top:20px"><center>Meanwhile Check out the A-star implementation<br><br> </center>
+      <button onclick="location.href='a-star.html'" type="button"
       style="height:30px;width:100px;font-size:18px;">
       A-star</button></h2>
-      <h2 style="margin-top:20px"><center>Meanwhile Check out the collatz implementation<br><br> </center>
-      <button onclick="location.href='collatz/collatz_conj.html'" type="button"
+        <h2 style="margin-top:20px"><center>Meanwhile Check out the collatz implementation<br><br> </center>
+      <button onclick="location.href='collatz_conj.html'" type="button"
       style="height:30px;width:100px;font-size:18px;">
       Collatz</button></h2>
     </header>
-	   <div class="subcontainer" id="siri-container">
-	   </div>
+    <div class="subcontainer" id="siri-container">
+    </div>
 
-  </body>
-    <script src="siriwavejs.js"></script>
-    <script>
-  //   var siriWave = new SiriWave({
-  //       container: document.getElementById('siri-container'),
-  //       autostart: true,
-  //       amplitude: 1,
-	// color: '#fff',
-	// speed: 0.1,
-	// cover: true,
-  // });
-	//     var siriWave2 = new SiriWave({
-  //       container: document.getElementById('siri-container'),
-  //       amplitude: 0.6,
-	// speed: 0.2,
-	// autostart: true,
-  //       style: 'ios9'
-  //
-  //   });
+</body>
+<script src="js/siriwavejs.js"></script>
+<script>
+    //   var siriWave = new SiriWave({
+    //       container: document.getElementById('siri-container'),
+    //       autostart: true,
+    //       amplitude: 1,
+    // color: '#fff',
+    // speed: 0.1,
+    // cover: true,
+    // });
+    //     var siriWave2 = new SiriWave({
+    //       container: document.getElementById('siri-container'),
+    //       amplitude: 0.6,
+    // speed: 0.2,
+    // autostart: true,
+    //       style: 'ios9'
+    //
+    //   });
+</script>
+<div id="sketch-holder" class="matrix"></div>
 
-    </script>
-    <div id="sketch-holder" class="matrix"></div>
 </html>
